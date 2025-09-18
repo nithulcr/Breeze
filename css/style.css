@@ -471,7 +471,7 @@ header {
     font-weight: 300;
     line-height: 35px;
     max-width: 700px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .home .swiper-pagination {
@@ -1100,13 +1100,12 @@ header {
   color: #fff;
 }
 
-.amenities-col {
- 
-}
+
 .amenities-col img{
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
+    display: block;
 }
 .amenities-col h5{
     text-align: center;
@@ -1376,9 +1375,7 @@ header {
     text-align: center;
 }
 
-.second-footer {
-    justify-content: center;
-}
+
 
 /* product-list start */
 .product-list {
@@ -1996,6 +1993,12 @@ header {
     .newst-second-row {
         margin-top: 30px;
     }
+    
+
+.amenities-row {
+    grid-template-columns:  1fr 1fr 1fr;
+
+}
 
 }
 
@@ -2180,6 +2183,11 @@ header {
     .newste-icon .container {
         padding: 0;
     }
+    .amenities-row {
+    grid-template-columns:  1fr 1fr;
+    gap: 20px;
+
+}
 }
 
 @media(max-width: 520px) {
@@ -2277,9 +2285,6 @@ header {
         padding: 20px;
     }
 
-    .footer {
-        padding: 20px;
-    }
 
 
 
