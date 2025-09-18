@@ -218,7 +218,11 @@ header {
     transition: .3s;
 
 }
+.sticky-bar .features-btn.button-site img {
+    width: 25px;
+    height: 25px;
 
+}
 .button-site span {
     position: absolute;
     left: 0;
@@ -757,6 +761,7 @@ header {
     font-size: 22px;
     color: white;
     margin-bottom: 5px;
+    line-height: 30px;
 }
 
 .property-card h6 {
@@ -2025,7 +2030,7 @@ header {
   }
 
     .features-btn {
-        margin: 0 auto;
+        margin: 0;
     }
 
     .features-row {
@@ -2418,11 +2423,38 @@ header {
     }
 
     .features2 h6 {
-        font-size: 18px;
+        font-size: 15px;
     }
 .newst-city-col h5 {
    margin-top: 5px;
     font-size: 14px;
 }
+.features .features-column {
+    padding: 12px;
+}
+.property-card {
+    padding: 0px;
 
+}
+.properties-head {
+    flex-direction: column;
+}
+.slider-arrows{
+    display: none;
+}
+.plan-card {
+
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+.plan-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 22px;
+}
+.plan-card .plan-value {
+    line-height: 40px;
+}
 }
