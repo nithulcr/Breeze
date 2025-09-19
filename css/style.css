@@ -118,36 +118,23 @@ header {
 
 }
 
-.nav-items:hover:before {
+.nav-items:before {
     content: "";
     position: absolute;
     bottom: -5px;
-    left: 0;
-    width: 100%;
+    left: 0;;
     height: 2px;
     background: #F0E68C;
     opacity: .6;
-    animation: tab_border .4s;
+    transition: .3s;
+    width: 0;
 }
 
-@keyframes tab_border {
-    0% {
-        width: 5px;
-        opacity: .2;
-    }
+.nav-items:hover:before {
 
-    50% {
-        width: 50%;
-        opacity: .5;
-    }
-
-    100% {
-        width: 100%;
-        opacity: .6;
-    }
-
+    width: 100%;
+    opacity: .6;
 }
-
 .nav-items.active {
     color: #F0E68C;
 
