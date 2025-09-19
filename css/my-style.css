@@ -19,11 +19,11 @@ html {
     font-size: 14px;
     line-height: 1.8;
     /* font-family: 'Cairo', sans-serif; */
-    /* font-family: "Roboto", sans-serif; */
+    font-family: "Roboto", sans-serif;
 
     /* overflow: hidden;*/
     scroll-behavior: smooth;
-     font-family: "Inter", sans-serif;
+     /* font-family: "Inter", sans-serif; */
 }
 
 img {
@@ -42,7 +42,9 @@ img {
 ::-webkit-scrollbar-thumb {
     background: #074846;
 }
-
+.overflow-hidden{
+    overflow: hidden;
+}
 /* Handle on hover */
 
 i {
@@ -54,6 +56,7 @@ p {
     line-height: 22px;
     font-weight: 300;
     margin: 0;
+    
 }
 
 .p-0 {
@@ -82,11 +85,13 @@ h5 {
 }
 
 hr {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    border: 0;
-    border-top: 1px solid #ececec;
-    height: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    /* border: 0; */
+    border-top: 1px solid #e7e7e7;
+    height: 1px;
+    /* background: red; */
+    width: 100%;
 }
 
 a {
@@ -106,7 +111,21 @@ a:hover {
     position: relative;
     /* font-family: "Roboto", sans-serif; */
 }
-
+.heading2 {
+    font-size: 28px;
+    line-height: 38px;
+    position: relative;
+}
+.heading2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background-color: #FFD700;
+    max-width: 120px;
+}
 .flex-align {
     display: flex;
     align-items: center;
@@ -379,7 +398,10 @@ a:hover {
         line-height: 30px;
 
     }
-
+.heading2 {
+    font-size: 20px;
+    line-height: 30px;
+}
     .properties-head .heading {
 
         font-size: 24px;
@@ -401,3 +423,6 @@ a:hover {
     line-height: 28px;
 }
 }
+
+
+ 
