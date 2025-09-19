@@ -368,7 +368,7 @@ header {
     bottom: -150px;
     left: 0;
     width: 100%;
-    background: #ffffffae;
+    background: #f0e68c91;
     z-index: 99;
     backdrop-filter: blur(8px);
     transition: .5s;
@@ -632,7 +632,7 @@ header {
 .about-right {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 25px;
     background: #00575b;
     padding: 70px 150px;
     justify-content: center;
@@ -1461,29 +1461,20 @@ header {
 }
 
 /* second page start */
-.banner-shape {
-    background-image: url(../images/banner-shape.png);
-    height: 160px;
-    width: 100%;
-    background-size: auto;
-    background-repeat-y: no-repeat;
-}
 
-.page_2 .about .row {
-    flex-direction: row;
-}
 
 .valuable-set h5 {
     position: relative;
     margin-bottom: 10px;
     font-weight: 300;
     display: flex;
-    gap: 6px;
+    gap: 8px;
 }
 
 .valuable-set h5 i {
-    margin-top: 3px;
+    margin-top: 5px;
     color: #FFD700;
+    font-size: 16px !important;
 }
 
 .valuable-set h5:before {
@@ -2140,6 +2131,13 @@ label {
         grid-template-columns: 1fr 1fr 1fr;
 
     }
+    .about-main .about-card{
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .about-main .about-right {
+    padding-right: 20px;
+}
 
 }
 
