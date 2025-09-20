@@ -827,11 +827,12 @@ header {
     bottom: -100px;
 }
 
-.property-card:hover .property-card-top img {
-    transform: scale(1.2) rotate(2deg);
+.property-card .property-card-top img {
     transition: .3s;
 }
-
+.property-card:hover .property-card-top img {
+    transform: scale(1.1) rotate(2deg);
+}
 
 .properties-head {
     display: flex;
@@ -1799,11 +1800,12 @@ header {
 
 .close2 {
     position: absolute;
-    top: 0px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     color: white;
     font-size: 40px;
     cursor: pointer;
+    line-height: 14px;
 }
 
 
@@ -1829,7 +1831,7 @@ header {
 /* Modal Content Box */
 .modal-content {
     background: #ffffffc0;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 50px;
     border-radius: 6px;
     width: 700px;
@@ -2229,10 +2231,6 @@ label {
 
 
 
-    .features-column {
-        border: 2px solid #00575b1f;
-    }
-
     .contact-left {
 
         padding-right: 15px;
@@ -2619,5 +2617,8 @@ label {
 input[type=text], input[type=email], input[type=tel], select {
     margin: 5px 0 5px 0;
     
+}
+.modal-content {
+    margin: 20px auto;
 }
 }

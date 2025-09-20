@@ -115,6 +115,7 @@ a:hover {
     font-size: 28px;
     line-height: 38px;
     position: relative;
+    width: fit-content;
 }
 .heading2:before {
     content: "";
