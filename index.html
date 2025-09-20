@@ -170,7 +170,8 @@
 							<h1 data-aos="fade-up">Introducing
 								<br><span class="text-site-primary">Breez Lagoon</span>
 							</h1>
-							<p data-aos="fade-up" data-aos-delay="200">Waves at Your Feet & Endless Sea View. A Shorline Crafted Just for You</p>
+							<p data-aos="fade-up" data-aos-delay="200">Waves at Your Feet & Endless Sea View. A Shorline
+								Crafted Just for You</p>
 							<div class="buttons-container" data-aos="fade-up" data-aos-delay="300">
 								<a href="#properties" class="button-site">
 									<h6>View Plans</h6>
@@ -190,8 +191,10 @@
 							<img src="images/hero/hero4.webp" class="" alt="banners">
 						</div>
 						<div class="carousel-caption">
-							<h1 data-aos="fade-up">Resort Style Living <span class="text-site-primary">Everyday</span></h1>
-							<p data-aos="fade-up" data-aos-delay="200">40+ Experiences Crafted  To Indulge The Body, Mind and Soul
+							<h1 data-aos="fade-up">Resort Style Living <span class="text-site-primary">Everyday</span>
+							</h1>
+							<p data-aos="fade-up" data-aos-delay="200">40+ Experiences Crafted To Indulge The Body, Mind
+								and Soul
 							</p>
 							<div class="buttons-container" data-aos="fade-up" data-aos-delay="300">
 								<a href="#properties" class="button-site">
@@ -212,8 +215,10 @@
 							<img src="images/hero/hero5.webp" class="" alt="banners" style="object-position: left;">
 						</div>
 						<div class="carousel-caption">
-							<h1 data-aos="fade-up">Dubai's Newst Icon at<span class="text-site-primary">Maritime City</span></h1>
-							<p data-aos="fade-up" data-aos-delay="200">Studio | 1 BHK | 2 BHK | 3 BHK | 4 BHK | Breez Villa</p>
+							<h1 data-aos="fade-up">Dubai's Newst Icon at<span class="text-site-primary">Maritime
+									City</span></h1>
+							<p data-aos="fade-up" data-aos-delay="200">Studio | 1 BHK | 2 BHK | 3 BHK | 4 BHK | Breez
+								Villa</p>
 							<div class="buttons-container" data-aos="fade-up" data-aos-delay="300">
 								<a href="#properties" class="button-site">
 									<h6>View Plans</h6>
@@ -233,7 +238,8 @@
 							<img src="images/hero/hero6.webp" class="" alt="banners">
 						</div>
 						<div class="carousel-caption">
-							<h1 data-aos="fade-up">The Art of <span class="text-site-primary">Waterfront Living </span> Perfected</h1>
+							<h1 data-aos="fade-up">The Art of <span class="text-site-primary">Waterfront Living </span>
+								Perfected</h1>
 							<p data-aos="fade-up" data-aos-delay="200">Luxury that greets you at every step</p>
 							<div class="buttons-container" data-aos="fade-up" data-aos-delay="300">
 								<a href="#properties" class="button-site">
@@ -249,7 +255,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 
 
@@ -332,8 +338,9 @@
 								360 DEGREE OCEAN VIEWS and a lifestyle that flows
 								as effortlessly as its name.
 							</p>
-							<a href="#properties" class=" button-site  button-site3" data-aos="fade-up" data-aos-delay="400">
-								<h6>View Our Apartments</h6>
+							<a href="https://danube.discoverin360.com/Breez-/" target="_blank"
+								class=" button-site  button-site3" data-aos="fade-up" data-aos-delay="400">
+								<h6>View Our Apartments 3D Model View</h6>
 								<img src="images/left-arrow-2.png" alt="whatsapp">
 
 								<span></span>
@@ -1227,14 +1234,14 @@
 						<img src="images/amenities/wall-climbing.jpg">
 						<h5>Wall Climbing</h5>
 					</div> -->
-					
-					
+
+
 					<div class="amenities-col">
 						<img src="images/amenities/lagoon.webp">
 						<h5>Breez Lagoon</h5>
 					</div>
-					
-					
+
+
 
 
 
@@ -1295,7 +1302,8 @@
 				<div class="col-lg-7 col-md-6 p-0">
 					<div class="about-right">
 						<div>
-							<h6 class="text-white text-16" data-aos="fade-up" style="opacity: .7; margin-bottom: 5px;">Why Choose Us</h6>
+							<h6 class="text-white text-16" data-aos="fade-up" style="opacity: .7; margin-bottom: 5px;">
+								Why Choose Us</h6>
 							<h4 class="text-site-primary heading" data-aos="fade-up">
 								Why Invest in Dubai?</h4>
 						</div>
@@ -1474,8 +1482,13 @@
 		<div id="videoModal" class="modal2">
 			<div class="modal-content2">
 				<span class="close2"><i class="fa-solid fa-xmark"></i></span>
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TV9AlBwtyQo" frameborder="0"
-					allowfullscreen></iframe>
+				<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TV9AlBwtyQo" frameborder="0"
+					allowfullscreen></iframe> -->
+				<video class="video" controls preload="none">
+					<source id='mp4' src="images/site-video.mp4" type='video/mp4'>
+
+					Your browser does not support the video tag.
+				</video>
 			</div>
 		</div>
 		<div id="formModal" class="modal">
@@ -1672,34 +1685,60 @@
 
 
 		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				var modal = document.getElementById("videoModal");
-				var btn = document.querySelector(".play-event");
-				var closeBtn = modal.querySelector(".close2");
-				var iframe = modal.querySelector("iframe");
-				var videoSrc = iframe.src;
+document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("videoModal");
+    var btn = document.querySelector(".play-event");
+    var closeBtn = modal.querySelector(".close2");
 
-				btn.addEventListener("click", function () {
-					modal.style.display = "block";
-					iframe.src = videoSrc; // Restore src to start playing
-					document.body.classList.add("overflow-hidden");
-				});
+    // Get iframe and video elements
+    var iframe = modal.querySelector("iframe");
+    var video = modal.querySelector("video");
 
-				closeBtn.addEventListener("click", function () {
-					modal.style.display = "none";
-					iframe.src = ""; // Stop video by clearing src
-					document.body.classList.remove("overflow-hidden");
-				});
+    // Store iframe src (if exists)
+    var videoSrc = iframe ? iframe.src : "";
 
-				window.addEventListener("click", function (event) {
-					if (event.target === modal) {
-						modal.style.display = "none";
-						iframe.src = ""; // Stop video by clearing src
-						document.body.classList.add("overflow-hidden");
-					}
-				});
-			});
-		</script>
+    btn.addEventListener("click", function () {
+        modal.style.display = "block";
+        document.body.classList.add("overflow-hidden");
+
+        // If iframe video
+        if (iframe) {
+            iframe.src = videoSrc; // restore video URL
+        }
+
+        // If HTML5 video
+        if (video) {
+            video.currentTime = 0; // restart
+            video.play();
+        }
+    });
+
+    function closeModal() {
+        modal.style.display = "none";
+        document.body.classList.remove("overflow-hidden");
+
+        // Stop iframe video
+        if (iframe) {
+            iframe.src = "";
+        }
+
+        // Stop HTML5 video
+        if (video) {
+            video.pause();
+            video.currentTime = 0;
+        }
+    }
+
+    closeBtn.addEventListener("click", closeModal);
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});
+</script>
+
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				var modal = document.getElementById("formModal");
