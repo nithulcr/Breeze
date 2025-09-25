@@ -934,10 +934,9 @@ header {
 
 .features2 {
     background: #FFD700;
-    padding: 50px 0px;
+    padding: 50px;
     text-align: center;
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
+
 
 }
 
@@ -1789,10 +1788,20 @@ label {
     .about-main .about-right {
         padding-right: 20px;
     }
+        .features-btn {
+        margin-left: 0;
+    }
 
 }
 
 @media(max-width: 768px) {
+    .features-column:nth-child(2){
+        border: none;
+        border-bottom: 2px solid #00575b1f;
+    }
+        .features-column:nth-child(1){
+        border-bottom: 2px solid #00575b1f;
+    }
     .danube-logo {
         padding: 0 20px;
     }
@@ -1820,9 +1829,7 @@ label {
     }
 
 
-    .features-btn {
-        margin: 0;
-    }
+
 
     .features-row {
         grid-template-columns: 1fr 1fr;
@@ -1993,11 +2000,6 @@ label {
     }
 
 
-    .newst-city-col-left {
-        align-items: center;
-        gap: 6px;
-        line-height: 32px;
-    }
 
     @keyframes left_anim {
         0% {
