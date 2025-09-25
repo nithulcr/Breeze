@@ -386,7 +386,7 @@ header {
     margin-bottom: 10px;
     line-height: 13px;
     font-size: 12px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .banner-badge i {
@@ -830,22 +830,16 @@ header {
 
 .property-card-top img {
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/.7;
     object-fit: cover;
     display: block;
 }
 
 .property-card-head h5 {
     font-size: 22px;
-    /* color: white; */
-    margin-bottom: 5px;
     line-height: 30px;
 }
 
-.property-card h6 {
-    /* color: white; */
-    font-size: 14px;
-}
 
 .property-row {
     display: flex;
@@ -858,7 +852,8 @@ header {
 .property-features {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    width: 100%;
 }
 
 .property-features img {
@@ -878,11 +873,22 @@ header {
 
 
 .property-features h6 {
-    font-weight: 600;
     font-size: 14px;
-    color: #00575b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
+.property-features h6 img {
+    width: 25px;
+}
+
+.property-features-rate {
+    font-weight: 600;
+    font-size: 18px;
+    color: #00575b;
+    margin-top: 10px;
+}
 
 
 .properties .carousel-indicators {
@@ -1229,34 +1235,43 @@ header {
     margin-top: 40px;
 }
 
-.amenities-row-2 ul {
+
+
+.amenities-list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    align-items: center;
+    /* remove bullets */
+    padding: 0;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.amenities-row-2 li {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    position: relative;
+.amenities-list li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #2d2d2dac;
+    border-right: 1px solid #2d2d2dac;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
 }
 
-/* .amenities-row-2 li:before {
-    content: '';
-    position: absolute;
-    right: -7px;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background-color: #527071;
-} */
-.amenities-row-2 li i {
-    color: #00575b;
-    font-size: 14px !important;
+.amenities-list li:nth-child(4n) {
+    border-right: none;
+    text-align: left;
 }
+
+.amenities-list li:nth-last-child(-n+4) {
+    border-bottom: none;
+}
+
+.amenities-list li:nth-child(1),
+.amenities-list li:nth-child(5),
+.amenities-list li:nth-child(9) {
+    text-align: right;
+}
+
+
+
 
 /* contact start */
 .contact-banner {
@@ -1454,7 +1469,7 @@ header {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     max-height: 100vh;
 
 }
@@ -1572,6 +1587,107 @@ label {
     font-weight: 300;
 }
 
+
+/* why invest start */
+
+.why-invest {
+    margin: 0 auto;
+    text-align: center;
+
+    padding: 100px 50px;
+
+
+}
+
+.why-invest h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.why-invest h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin: 5% 0 3% 0;
+}
+
+.investment-grid>div {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+
+.card {
+    padding: 14px;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.card>i {
+    flex: none;
+    font-size: 32px !important;
+    color: #00575b;
+    width: 40px;
+}
+
+
+.card h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.card p {
+    color: #424242;
+    font-size: 14px;
+}
+
+.center-card {
+    background-color: #00575b !important;
+    padding: 40px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 114% !important;
+}
+
+.center-card h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.center-card img {
+    width: 160px;
+}
+
+
+.center-card .price {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+
+
+
 @media(min-width: 520px) {
 
 
@@ -1645,7 +1761,61 @@ label {
 
 }
 
+@media(max-width: 1080px) {
+    .investment-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0;
+
+    }
+
+    .center-card {
+        display: none !important;
+    }
+}
+
 @media(max-width: 990px) {
+
+
+    .center-card {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .amenities-list {
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .amenities-list li:nth-child(4n) {
+        border-bottom: 1px solid #2d2d2dac;
+        border-right: 1px solid #2d2d2dac;
+    }
+
+    .amenities-list li:nth-child(9) {
+        border-bottom: 1px solid #2d2d2dac;
+    }
+
+    .amenities-list li:nth-child(3n) {
+        border-right: none;
+        text-align: left;
+    }
+
+    .amenities-list li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+
+    .amenities-list li:nth-child(1),
+    .amenities-list li:nth-child(4),
+    .amenities-list li:nth-child(7),
+    .amenities-list li:nth-child(10) {
+        text-align: right;
+    }
+
+    .amenities-list li:nth-child(5),
+    .amenities-list li:nth-child(8) {
+        text-align: center;
+    }
+
     .plan-cards {
         gap: 18px;
     }
@@ -1661,9 +1831,6 @@ label {
         border-radius: 12px;
     }
 
-    .amenities-list {
-        gap: 12px;
-    }
 
     .amenities-bg {
         padding: 16px;
@@ -1788,20 +1955,39 @@ label {
     .about-main .about-right {
         padding-right: 20px;
     }
-        .features-btn {
+
+    .features-btn {
         margin-left: 0;
     }
 
 }
 
 @media(max-width: 768px) {
-    .features-column:nth-child(2){
+    .investment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .investment-grid>div {
+        padding: 10px;
+    }
+
+    .investment-grid {
+        background-color: white;
+        border-radius: 16px;
+        overflow: hidden;
+        margin: 0;
+        gap: 0;
+    }
+
+    .features-column:nth-child(2) {
         border: none;
         border-bottom: 2px solid #00575b1f;
     }
-        .features-column:nth-child(1){
+
+    .features-column:nth-child(1) {
         border-bottom: 2px solid #00575b1f;
     }
+
     .danube-logo {
         padding: 0 20px;
     }
@@ -1823,9 +2009,11 @@ label {
         grid-template-columns: 1fr;
     }
 
-    .amenities-list {
-        flex-direction: column;
-        gap: 8px;
+    .amenities-list li {
+        padding: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center !important;
     }
 
 
@@ -1855,7 +2043,8 @@ label {
     .newst-city-col:nth-child(5) {
         border-right: 1px solid #00575b54;
     }
-        .newst-city-col:nth-child(6) {
+
+    .newst-city-col:nth-child(6) {
         border: none;
     }
 
@@ -1886,8 +2075,8 @@ label {
 
     .home .carousel-caption p {
 
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 24px !important;
 
     }
 
@@ -1934,7 +2123,8 @@ label {
     .services-start,
     .about2,
     .payment,
-    .ameninties {
+    .ameninties,
+    .why-invest {
         padding: 70px 30px;
     }
 
@@ -2025,7 +2215,8 @@ label {
     .properties,
     .services-start,
     .about2,
-    .ameninties {
+    .ameninties,
+    .why-invest {
 
         padding: 50px 20px;
     }
@@ -2255,4 +2446,12 @@ label {
     .properties-details .container-fluid {
         padding: 0;
     }
+
+    .card>i {
+        font-size: 22px !important;
+        width: 26px;
+    }
+    .plan-intro {
+    margin-bottom: 30px;
+}
 }
