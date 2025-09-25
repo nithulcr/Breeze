@@ -23,16 +23,8 @@ header {
 
 }
 
-.scroll-start .fixed-contact h6 {
-    display: none;
-    width: 0;
-    padding: 0;
-}
 
-.scroll-start .fixed-contact {
 
-    animation: btn_anim2 .5s ease;
-}
 
 .scroll-start header {
 
@@ -45,16 +37,7 @@ header {
     transition: .3s;
 }
 
-@keyframes btn_anim2 {
-    0% {
-        right: -100px;
-    }
 
-    100% {
-        right: 0px;
-
-    }
-}
 
 .scroll-start .fixed-contact>div {
     min-width: auto;
@@ -382,19 +365,30 @@ header {
 .danube-logo {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
     z-index: 9;
+    max-width: 1320px;
+    
+}
+.danube-logo img{
+    width: 200px;
+    
 }
 
 
 .site-body {
     padding-top: 87px;
 }
-
-.home .carousel-caption {
-    padding-top: 100px;
-    padding-bottom: 50px;
+.carousel-text{
+    position: relative;
+}
+.carousel-text.bg-light{
+    background: #8d7f6f;
+    width: fit-content;
+     margin: 0 auto;
+     padding: 30px;
 }
 
 .home .carousel-inner2 {
@@ -407,14 +401,14 @@ header {
     width: 100%;
 }
 
-.home .carousel-inner2.overlay1:before {
+.home .carousel-inner2.overlay:before {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: calc(100% - 5px);
-    background-color: #011a232b;
+    background-color: #011a2359;
     z-index: 9;
 }
 
@@ -425,7 +419,7 @@ header {
     top: 0;
     width: 100%;
     height: calc(100% - 5px);
-    background-color: #00000071;
+    background-color: #00000034;
     z-index: 9;
 }
 
@@ -441,10 +435,47 @@ header {
     color: #fff;
     text-align: center;
     z-index: 99;
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1320px;
+     padding-top: 100px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+.home .carousel-caption.left-text{
 
+
+    text-align: left;
+}
+.home .carousel-caption.left-text p{
+    margin: 10px 0;
+}
+.home .carousel-caption.left-text .buttons-container{
+     margin: 10px 0;
+}
+.carousel-caption.left-text .carousel-text{
+    max-width: 600px;
+}
+.home .carousel-caption.right-text{
+
+    right: 0;
+    text-align: right;
+}
+.home .carousel-caption.right-text p{
+    margin: 10px 0;
+   margin-left: auto;
+     margin-right: 0;
+}
+.home .carousel-caption.right-text .buttons-container{
+     margin-left: auto;
+     margin-right: 0;
+}
+.carousel-caption.right-text .carousel-text{
+    max-width: 600px;
+    float: inline-end;
+
+}
 .properties .swiper-container>.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     display: none;
 }
@@ -455,8 +486,8 @@ header {
 
 .home .carousel-caption h1 {
     color: white;
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 60px;
+    line-height: 70px;
     font-weight: 800;
 }
 
@@ -465,7 +496,7 @@ header {
     font-size: 20px;
     font-weight: 300;
     line-height: 35px;
-    max-width: 700px;
+    max-width: 500px;
     margin: 10px auto;
 }
 
@@ -758,12 +789,12 @@ header {
 }
 
 .property-card-head {
-    background: #00000066;
+    /* background: #00000066;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
-    padding: 15px;
+    padding: 10px 0;
 
 }
 
@@ -776,13 +807,13 @@ header {
 
 .property-card-head h5 {
     font-size: 22px;
-    color: white;
+    /* color: white; */
     margin-bottom: 5px;
     line-height: 30px;
 }
 
 .property-card h6 {
-    color: white;
+    /* color: white; */
     font-size: 14px;
 }
 
@@ -790,7 +821,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     flex-wrap: wrap;
 }
 
@@ -942,8 +973,12 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.newst-city-row.newst-city-row2 {
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .newst-city-col {
-    background: #e8f5f4;
     border: 2px solid #00565b3a;
     border-radius: 6px;
     padding: 16px;
@@ -955,7 +990,9 @@ header {
     background: #e8f5f4;
 
 }
-
+.newst-city-row2 .newst-city-col{
+    background: #fff;
+}
 .newst-city-col:hover {
     margin-top: -6px;
 }
@@ -965,7 +1002,10 @@ header {
     color: #00575b;
     font-size: 16px;
 }
-
+.newst-city-row2 .newst-city-col h5{
+    font-size: 18px;
+    color: #000;
+}
 .newst-city-col-left {
     font-size: 2.15rem;
     font-weight: 700;
@@ -1107,12 +1147,6 @@ header {
     font-size: 14px 20px;
     font-weight: 300;
     line-height: 14px;
-    background-color: #00575b;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 20px 0 20px 20px;
-    color: #FFD700;
 }
 
 .amenities-row-2 {
@@ -1833,7 +1867,7 @@ header {
 .modal-content {
     background: #ffffffc0;
     margin: 40px auto;
-    padding: 50px;
+    padding: 40px;
     border-radius: 6px;
     width: 700px;
     max-width: 90%;
@@ -1870,7 +1904,7 @@ input[type=email],
 input[type=tel],
 select {
     width: 100%;
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
     padding: 10px 0px;
     border: none;
     border-bottom: 1px solid #00575b;
@@ -1899,19 +1933,7 @@ label {
 }
 
 @media(min-width: 520px) {
-    .property-button {
-        height: 0;
-        opacity: 0;
-        transition: .3s;
-        position: relative;
-        bottom: -50px;
-    }
 
-    .property-card:hover .property-button {
-        height: auto;
-        opacity: 1;
-        bottom: 0;
-    }
 
     .header-right .logo {
         display: none;
