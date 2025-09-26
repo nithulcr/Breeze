@@ -2168,6 +2168,12 @@ label {
         padding: 6px 15px;
         font-size: 12px;
     }
+
+    .home .carousel-caption {
+        top: 00%;
+        transform: translateX(-50%);
+    
+    }
 }
 
 @media(max-width: 520px) {
@@ -2325,6 +2331,7 @@ label {
 
     }
 
+
 }
 
 
@@ -2361,6 +2368,10 @@ label {
         font-size: 13px;
         line-height: 20px;
 
+    }
+
+    .danube-logo img {
+        width: 100px;
     }
 }
 
@@ -2451,7 +2462,8 @@ label {
         font-size: 22px !important;
         width: 26px;
     }
+
     .plan-intro {
-    margin-bottom: 30px;
-}
+        margin-bottom: 30px;
+    }
 }
