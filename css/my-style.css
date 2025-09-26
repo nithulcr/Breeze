@@ -6,7 +6,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --main-color:#00575b;
+    --main-color2:#FFD700;
 
+}
 body,
 html {
     margin: 0 auto !important;
@@ -102,7 +106,7 @@ a {
 }
 
 a:hover {
-    color: #F0E68C;
+    color: inherit;
 }
 
 .heading {
