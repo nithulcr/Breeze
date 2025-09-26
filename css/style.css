@@ -430,7 +430,7 @@ header {
     object-fit: cover;
     width: 100%;
 }
-
+/* 
 .home .carousel-inner2.overlay:before {
     content: "";
     position: absolute;
@@ -462,7 +462,7 @@ header {
     height: calc(100% - 5px);
     background: linear-gradient(90deg, #011a2385, #011a2348, transparent, transparent);
     z-index: 9;
-}
+} */
 
 .home .carousel-caption {
     position: absolute;
@@ -1250,8 +1250,7 @@ h1{
 .amenities-col h5 {
     text-align: center;
     padding: 10px;
-    font-size: 14px 20px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 14px;
 }
 
@@ -2250,10 +2249,7 @@ label {
 
     }
 
-    .amenities-col h5 {
-        padding: 6px 15px;
-        font-size: 12px;
-    }
+
 
     .home .carousel-caption {
         top: 00%;
@@ -2404,11 +2400,11 @@ label {
         margin-right: auto;
     }
 
-    .home .carousel-inner2.overlay2:before,
+    /* .home .carousel-inner2.overlay2:before,
     .home .carousel-inner2.overlay3:before,
     .home .carousel-inner2.overlay:before {
         background-color: #00000099;
-    }
+    } */
 
     .banner-badge {
 
