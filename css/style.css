@@ -359,9 +359,12 @@ header {
 
 
 /* home started */
+.home{
+    position: relative;
+}
 .danube-logo {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -2261,7 +2264,26 @@ label {
 }
 
 @media(max-width: 520px) {
+   .carousel-caption .buttons-container{
+        display: none;
+    }
+   .sticky-bar {
+    bottom: 0;
+}
+.danube-logo {
 
+    bottom: 50px;
+
+
+}
+.home .swiper-pagination span {
+    width: 10px;
+    height: 10px;
+
+}
+.home .swiper-pagination {
+    bottom: 3% !important;
+}
     .header-right {
 
         justify-content: space-between;
@@ -2333,9 +2355,11 @@ label {
     .fixed-contact {
         top: auto;
         transform: initial;
-        bottom: 70px;
+        bottom: 100px;
     }
-
+.home .carousel-inner2 img {
+    height: calc(100vh - 80px);
+}
 
     .properties .carousel-indicators {
         bottom: -80px;
@@ -2455,7 +2479,7 @@ label {
     }
 
     .danube-logo img {
-        width: 100px;
+        width: 130px;
     }
     .sticky-bar .features-btn.button-site {
 
