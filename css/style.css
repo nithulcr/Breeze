@@ -341,6 +341,7 @@ header {
     justify-content: space-between;
     padding: 16px;
     max-width: 250px;
+    margin: 0 auto;
 }
 .sticky-bar .features-btn.button-site h6{
     width: calc(100% - 50px);
@@ -1013,7 +1014,7 @@ h1{
 }
 
 .features-column:not(:last-child) {
-    border-right: 2px solid var(--main-color)1f;
+    border-right: 2px solid #00575b1f;
 }
 
 /* newst icons start */
@@ -1044,7 +1045,7 @@ h1{
     gap: 6px;
     transition: .3s;
     background: #e8f5f4;
-    border: 1px solid var(--main-color)54;
+    border: 1px solid #00575b54;
 
 }
 
@@ -1452,7 +1453,7 @@ h1{
 
 
 
-.second-footer .sub-page-number a {
+.second-footer .contact-number a {
     color: white !important;
 }
 
@@ -2060,11 +2061,11 @@ label {
 
     .features-column:nth-child(2) {
         border: none;
-        border-bottom: 2px solid var(--main-color)1f;
+        border-bottom: 2px solid #00575b1f;
     }
 
     .features-column:nth-child(1) {
-        border-bottom: 2px solid var(--main-color)1f;
+        border-bottom: 2px solid #00575b1f;
     }
 
     .danube-logo {
@@ -2108,7 +2109,7 @@ label {
 
     .newst-city-col:nth-child(3) {
         border-top: none;
-        border-right: 1px solid var(--main-color)54;
+        border-right: 1px solid #00575b54;
         border-left: none;
     }
 
@@ -2116,11 +2117,11 @@ label {
         border-top: none;
         border-right: none;
         border-left: none;
-        border-bottom: 1px solid var(--main-color)54;
+        border-bottom: 1px solid #00575b54;
     }
 
     .newst-city-col:nth-child(5) {
-        border-right: 1px solid var(--main-color)54;
+        border-right: 1px solid #00575b54;
     }
 
     .newst-city-col:nth-child(6) {
@@ -2458,6 +2459,11 @@ label {
     .danube-logo img {
         width: 100px;
     }
+    .sticky-bar .features-btn.button-site {
+
+    max-width:100%;
+
+}
 
 }
 
