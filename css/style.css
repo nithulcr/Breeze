@@ -4,7 +4,7 @@ header {
     z-index: 999;
     width: 100%;
     left: 0;
-    background: var(--main-color);
+    background: hsla(0, 0%, 0%, 0.526);
 
 }
 
@@ -29,6 +29,7 @@ header {
 .scroll-start header {
 
     border-bottom: 1px solid #FFFFFF54;
+     background: var(--main-color);
 }
 
 .scroll-start .header-align {
@@ -136,7 +137,7 @@ header {
 .button-site {
     background: var(--main-color2);
     color: var(--main-color);
-    padding: 12px 18px;
+    padding: 14px 24px;
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -150,6 +151,7 @@ header {
     z-index: 9;
     min-height: 26px;
     transition: .3s;
+==
 
 }
 
@@ -172,7 +174,7 @@ header {
     color: var(--main-color);
     z-index: 9;
     white-space: nowrap;
-    font-size: 16px !important;
+    font-size: 17px !important;
 
 
 }
@@ -375,9 +377,9 @@ header {
 }
 
 
-.site-body {
+/* .site-body {
     padding-top: 87px;
-}
+} */
 
 .carousel-text {
     position: relative;
@@ -426,7 +428,8 @@ header {
 }
 
 .home .carousel-inner2 img {
-    height: calc(100vh - 75px);
+    /* height: calc(100vh - 75px); */
+    height: 100vh;
     object-fit: cover;
     width: 100%;
 }
@@ -466,7 +469,7 @@ header {
 
 .home .carousel-caption {
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: initial;
     bottom: initial;
     left: 50%;
@@ -535,14 +538,13 @@ h1{
      color: white;
     font-size: 60px;
     line-height: 66px;
-    font-weight: 800;
-    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 700;
 }
 .home .carousel-caption h1 {
     color: white;
     font-size: 60px;
     line-height: 66px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .home .carousel-caption p {
@@ -2139,9 +2141,9 @@ label {
         height: 75px;
     }
 
-    .site-body {
+    /* .site-body {
         padding-top: 75px;
-    }
+    } */
 
     .scroll-start .header-align {
 
@@ -2252,7 +2254,7 @@ label {
 
 
     .home .carousel-caption {
-        top: 00%;
+        top: 10%;
         transform: translateX(-50%);
 
     }
