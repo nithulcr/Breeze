@@ -191,6 +191,19 @@ header {
 
 }
 
+.booknow-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    border-left: 1px solid white;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sticky-bar .features-btn.button-site img {
     width: 25px;
     height: 25px;
@@ -327,8 +340,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    max-width: 250px;
 }
-
+.sticky-bar .features-btn.button-site h6{
+    width: calc(100% - 50px);
+    text-align: center;
+}
 .scroll-start .sticky-bar {
     bottom: 0;
 }
@@ -1320,14 +1337,26 @@ header {
 .first-footer {
     display: flex;
     align-items: center;
-    gap: 15px;
+    flex-direction: column;
     border-bottom: 1px solid #FFFFFF30;
     justify-content: center;
     padding: 20px 10px 20px 10px;
     flex-wrap: wrap;
+    width: 100%;
 }
-
-.first-footer img {
+.blue-print img{
+    width: 250px;
+}
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 10px 10px 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.first-footer .footer-social img {
     width: 30px;
     height: 30px;
     object-fit: contain;
@@ -1336,7 +1365,7 @@ header {
 
 }
 
-.first-footer img:hover {
+.first-footer .footer-social img:hover {
 
     -webkit-animation-name: jello;
     animation: jello 2s linear;
@@ -1667,16 +1696,34 @@ label {
     align-items: center;
     text-align: center;
     gap: 10px;
-    height: 114% !important;
+    height: 118% !important;
+    position: relative;
+    background: url(../images/tower.jpg);
+    background-position:top center;
+    background-size: cover;
+    /* justify-content: flex-end!important; */
 }
+/* .center-card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000008d;
 
+} */
+.center-card > *{
+    z-index: 1;
+    position: relative;
+}
 .center-card h3 {
     margin: 0;
     font-weight: normal;
 }
 
 .center-card img {
-    width: 160px;
+    width: 200px;
 }
 
 
@@ -2172,7 +2219,7 @@ label {
     .home .carousel-caption {
         top: 00%;
         transform: translateX(-50%);
-    
+
     }
 }
 
