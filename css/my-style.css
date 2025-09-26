@@ -108,7 +108,9 @@ a {
 a:hover {
     color: inherit;
 }
-
+header a:hover {
+    color:var(--main-color2);
+}
 .heading {
     padding-bottom: 10px;
     width: fit-content;
