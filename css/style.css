@@ -558,7 +558,9 @@ h1{
     max-width: 700px;
     margin: 20px auto;
 }
-
+.home .swiper-slide img.mob{
+    display: none;
+}
 .home .swiper-pagination {
 
     bottom: 6% !important;
@@ -2485,6 +2487,12 @@ label {
 
     max-width:100%;
 
+}
+.home .swiper-slide img.desk{
+    display: none;
+}
+.home .swiper-slide img.mob{
+    display:block;
 }
 
 }
