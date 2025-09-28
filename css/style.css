@@ -4,7 +4,7 @@ header {
     z-index: 999;
     width: 100%;
     left: 0;
-    background: hsla(0, 0%, 0%, 0.526);
+    background: hsla(0, 0%, 0%, 0.2);
 
 }
 
@@ -787,6 +787,7 @@ h1{
     color: white;
     /* margin-bottom: 10px; */
     font-size: 20px;
+    line-height: 28px;
 }
 
 /* video sec start */
@@ -2046,6 +2047,9 @@ label {
     .features-btn {
         margin-left: 0;
     }
+        .home .carousel-inner2:before{
+        background-color: #00000099;
+    }
 
 }
 
@@ -2137,8 +2141,8 @@ label {
 
     .home .carousel-caption h1, h1 {
 
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 28px;
+        line-height: 34px;
 
     }
 
@@ -2162,11 +2166,13 @@ label {
 
     .home .carousel-caption p {
 
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px !important;
 
     }
-
+.introducing{
+    display: none;
+}
     .header-align {
 
         padding: 0 20px;
@@ -2429,11 +2435,7 @@ label {
         margin-right: auto;
     }
 
-    /* .home .carousel-inner2.overlay2:before,
-    .home .carousel-inner2.overlay3:before,
-    .home .carousel-inner2.overlay:before {
-        background-color: #00000099;
-    } */
+
 
     .banner-badge {
 
@@ -2589,4 +2591,12 @@ label {
     .plan-intro {
         margin-bottom: 30px;
     }
+    .feature-box h5 {
+    font-size: 18px;
+    line-height: 26px;
+}
+.newst-city-row2 .newst-city-col h5 {
+    font-size: 15px;
+    line-height: 20px;
+}
 }
