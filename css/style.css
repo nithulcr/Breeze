@@ -435,6 +435,7 @@ header {
     height: 100vh;
     object-fit: cover;
     width: 100%;
+    display: block;
 }
 .home .carousel-inner2:before {
     content: "";
@@ -442,8 +443,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    height: calc(100% - 5px);
-    background-color: #011a2359;
+    height:100%;
     z-index: 9;
 }
 /* 
