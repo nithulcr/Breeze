@@ -338,6 +338,7 @@ header .nav a:hover {
     .col-md-3 {
         width: 25%;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -403,6 +404,7 @@ header .nav a:hover {
 }
 
 @media (max-width: 580px) {
+    
 
     .heading {
 
