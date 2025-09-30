@@ -424,7 +424,10 @@ header {
     margin-right: auto;
     margin-left: 0;
 }
-
+.carousel-caption .carousel-caption-img{
+    width: 200px;
+    margin: 20px 0;
+}
 .home .carousel-inner2 {
     position: relative;
 }
@@ -489,7 +492,9 @@ header {
     margin: 0 auto;
 
 }
-
+.carousel-caption-with-img{
+    padding-top: 50px!important;
+}
 .home .carousel-caption.left-text {
 
 
@@ -2047,7 +2052,7 @@ label {
         margin-left: 0;
     }
         .home .carousel-inner2:before{
-        background-color: #00000099;
+        background-color: #0000006d;
     }
 
 }
@@ -2275,6 +2280,20 @@ label {
    .carousel-caption .buttons-container{
         display: none;
     }
+    .only-desk{
+        display: none;
+    }
+    .home .carousel-caption p {
+    margin: 10px 0!important;
+    text-align: left;
+}
+
+.carousel-caption-with-img *{
+    text-align: center!important;
+}
+.carousel-caption-with-img .banner-badge{
+        margin-left: auto !important;
+    }
    .sticky-bar {
     bottom: 0;
 }
@@ -2425,20 +2444,23 @@ label {
 
     .home .carousel-caption.right-text,
     .home .carousel-caption.left-text {
-        text-align: center;
+         text-align: left;
     }
 
     .home .carousel-caption.right-text .buttons-container,
     .home .carousel-caption.left-text .buttons-container {
-        margin-left: auto;
+        /* margin-left: auto; */
         margin-right: auto;
+       
     }
 
-
+.home .carousel-caption h1, h1{
+    text-align: left;
+}
 
     .banner-badge {
 
-        margin-left: auto !important;
+        margin-left: 0!important;
         margin-right: auto !important;
 
     }
