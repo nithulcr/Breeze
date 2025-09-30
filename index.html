@@ -17,6 +17,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 
 
 </head>
@@ -97,7 +101,7 @@
 					<a class="button-site button-form" style="min-width: 160px;">
 						<h6>Book Now</h6>
 						<!-- <img src="images/whatsapp.png" alt="whatsapp"> -->
-						 
+
 						<span></span>
 					</a>
 
@@ -128,7 +132,8 @@
 							<div class="carousel-text">
 								<span class="banner-badge"><i class="fa-solid fa-location-dot"></i>Maritime
 									City, Dubai</span>
-								<p class="introducing" style="margin-bottom:0; font-size:18px; line-height:16px;">Introducing</p>
+								<p class="introducing" style="margin-bottom:0; font-size:18px; line-height:16px;">
+									Introducing</p>
 								<h1>Breez by<br>
 									<span class="text-site-primary">Danube Properties</span>
 								</h1>
@@ -154,7 +159,7 @@
 						<div class="carousel-inner2 ">
 							<img src="images/hero/hero1.jpg" class="position1 desk" alt="banners"
 								style="object-position: right;">
-								<img src="images/hero/hero1mob.jpg" class="mob" alt="banners">
+							<img src="images/hero/hero1mob.jpg" class="mob" alt="banners">
 						</div>
 						<div class="carousel-caption left-text">
 							<div class="carousel-text">
@@ -244,7 +249,7 @@
 						<div class="carousel-inner2 ">
 							<img src="images/hero/hero5.jpg" class="position2 desk" alt="banners"
 								style="object-position: left;">
-								<img src="images/hero/hero5mob.jpg" class="mob" alt="banners">
+							<img src="images/hero/hero5mob.jpg" class="mob" alt="banners">
 						</div>
 						<div class="carousel-caption right-text">
 							<div class="carousel-text" style="max-width: 800px;">
@@ -685,9 +690,11 @@
 							bedroom
 						</h4>
 						<h5 class="text-22">Apartments & Breez Villa</h5>
-						<a href="https://calendly.com/breezmaritimecity/60min" target="_blank" class="text-16" style="margin-top: 10px; display: flex; align-items: center;">Book an
-							Appoinment with Sales Manager 
-							<i class="fas fa-arrow-right" style="margin-left:10px; color: rgb(62, 62, 62); font-size: 16px!important;"></i>
+						<a href="https://calendly.com/breezmaritimecity/60min" target="_blank" class="text-16"
+							style="margin-top: 10px; display: flex; align-items: center;">Book an
+							Appoinment with Sales Manager
+							<i class="fas fa-arrow-right"
+								style="margin-left:10px; color: rgb(62, 62, 62); font-size: 16px!important;"></i>
 
 						</a>
 
@@ -915,7 +922,8 @@
 					<p data-aos="fade-up" data-aos-delay="100">Secure Your Luxury Apartment with a transparent, stepwise
 						payment plan designed for your convenience
 						at
-						Breeze by Danube, Dubailand. Breeze by Danube merges modern design with lush greenery, creating
+						Breeze by Danube, Maritime City. Breeze by Danube merges modern design with lush greenery,
+						creating
 						a
 						harmonious
 						living experience.</p>
@@ -1368,7 +1376,7 @@
 					Powered
 					by Host on pdl. com</h6>
 				<div class="links">
-					<a href="Privacypolicy.html" >Privacy Policy</a>
+					<a href="Privacypolicy.html">Privacy Policy</a>
 					|
 					<a>Site Map</a>
 
@@ -1408,7 +1416,9 @@
 					</div>
 					<div>
 						<!-- <label for="phone">Phone *</label> -->
+						<!-- <input id="phone" type="tel" name="phone" placeholder="Phone" required /> -->
 						<input id="phone" type="tel" name="phone" placeholder="Phone" required />
+
 					</div>
 					<div>
 						<!-- <label for="nationality">Nationality</label> -->
@@ -1669,6 +1679,13 @@
 		});
 
 	</script>
+	<script>
+		const phoneInputField = document.querySelector("#phone");
+		window.intlTelInput(phoneInputField, {
+			utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+		});
+	</script>
+
 
 </body>
 
