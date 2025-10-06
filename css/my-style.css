@@ -7,10 +7,21 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color:#00575b;
-    --main-color2:#FFD700;
+    --main-color:#0d1b2d;
+    --main-color3:#00575b;
+
+    --main-color2:#F5F501;
 
 }
+@font-face {
+  font-family: "Bristone";
+  src: url("../images/bristone.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body,
 html {
     margin: 0 auto !important;
@@ -34,9 +45,9 @@ html {
 img {
     object-fit: contain;
 }
-/* .carousel-caption h1{
-    font-family: "Zen Kaku Gothic Antique", sans-serif;
-} */
+.carousel-caption h1, .plan-cards2 .plan-value{
+    font-family: "Bristone";
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -47,7 +58,7 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #074846;
+    background: var(--main-color);
 }
 .overflow-hidden{
     overflow: hidden;
@@ -57,7 +68,9 @@ img {
 i {
     font-size: 20px !important;
 }
-
+footer i{
+     font-size: 15px !important;
+}
 p {
     font-size: 16px;
     line-height: 22px;

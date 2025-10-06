@@ -40,10 +40,6 @@ header {
 
 
 
-.scroll-start .fixed-contact>div {
-    min-width: auto;
-
-}
 
 .logo {
     align-items: center;
@@ -151,6 +147,7 @@ header {
     z-index: 9;
     min-height: 26px;
     transition: .3s;
+    
 
 }
 
@@ -174,6 +171,7 @@ header {
     z-index: 9;
     white-space: nowrap;
     font-size: 17px !important;
+    font-weight: 600;
 
 
 }
@@ -198,7 +196,7 @@ header {
     top: 0;
     height: 100%;
     width: 50px;
-    border-left: 1px solid white;
+    border-left: 1px solid var(--main-color);
     z-index: 9;
     display: flex;
     align-items: center;
@@ -216,7 +214,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background: #F0E68C;
+    background: #edd718;
     height: 0%;
     top: 0;
     z-index: 1;
@@ -225,7 +223,7 @@ header {
 
 .button-site3 span {
 
-    background: #043d3b;
+    background: #0e2246;
 
 }
 
@@ -275,42 +273,24 @@ header {
 
 .fixed-contact {
     position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 20px;
+    bottom: 20px;
     z-index: 9999;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-.fixed-contact>div {
-    background-color: white;
-    display: flex;
-    cursor: pointer;
-    justify-content: flex-end;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     align-items: center;
-    height: 40px;
-    box-shadow: -2px 2px 5px 2px #57575747;
+    justify-content: center;
 }
 
-.fixed-contact>div:hover {
-    transform: scale(1.01);
-    transition: .3s;
-}
 
-.fixed-contact h6 {
-    color: white;
-    padding: 0 15px;
-    border-right: 1px solid #e8f5f4;
-    font-size: 15px;
-    height: 24px;
-    align-items: center;
-    display: flex;
-}
 
 .fixed-contact img {
-    margin: 0 15px;
+
+    width: 70px;
+    height: 70px;
 }
 
 .text-site-primary {
@@ -329,7 +309,7 @@ header {
     bottom: -150px;
     left: 0;
     width: 100%;
-    background: #f0e68c91;
+    background: #0d1b2d;
     z-index: 99;
     backdrop-filter: blur(8px);
     transition: .5s;
@@ -350,10 +330,12 @@ header {
 }
 .scroll-start .sticky-bar {
     bottom: 0;
+    border-top: 2px solid #e7f9fe1a;
 }
 
 .sticky-bar h5 {
     font-size: 20px;
+    line-height: 20px;
 }
 
 
@@ -399,7 +381,7 @@ header {
     align-items: center;
     gap: 5px;
     padding: 7px 10px;
-    background-color: var(--main-color);
+    background-color: var(--main-color3);
     border-radius: 20px;
     font-size: 14px;
     width: fit-content;
@@ -447,6 +429,16 @@ header {
     width: 100%;
     height:100%;
     z-index: 9;
+}
+.home .carousel-inner3:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index: 9;
+    background: linear-gradient(269deg, rgba(0, 0, 0, 0.359), transparent);
 }
 /* 
 
@@ -544,14 +536,14 @@ header {
 }
 h1{
      color: white;
-    font-size: 60px;
-    line-height: 66px;
+    font-size: 44px;
+    line-height: 54px;
     font-weight: 700;
 }
 .home .carousel-caption h1 {
     color: white;
-    font-size: 60px;
-    line-height: 66px;
+    font-size: 44px;
+    line-height: 54px;
     font-weight: 700;
 }
 
@@ -717,7 +709,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background: var(--main-color);
+    background: var(--main-color3);
     padding: 70px 150px;
     justify-content: center;
     height: 100%;
@@ -889,7 +881,7 @@ h1{
 .property-features {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 6px;
     width: 100%;
 }
 
@@ -922,9 +914,9 @@ h1{
 
 .property-features-rate {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     color: var(--main-color);
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 
@@ -1023,11 +1015,12 @@ h1{
 .sticky-bar .features-column {
     padding: 15px;
     min-height: auto;
+    height: 100%;
 
 }
 
 .features-column:not(:last-child) {
-    border-right: 2px solid #00575b1f;
+    border-right: 2px solid #e7f9fe1a;
 }
 
 /* newst icons start */
@@ -1189,7 +1182,18 @@ h1{
     justify-content: center;
     gap: 20px;
 }
+.plan-cards.plan-cards2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 
+}
+
+.plan-cards.plan-cards2 > *:not(:last-child) {
+    border-right: 2px solid #0d0d0d1a;
+}
 .plan-card {
     position: relative;
     background: #fff;
@@ -1200,7 +1204,26 @@ h1{
     text-align: center;
     padding: 24px 14px 20px 14px;
 }
+.plan-card-main{
+    padding: 0;
+    background: transparent;
+}
+.plan-cards.plan-cards2 .plan-card{
+     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: auto;
+    height: 100%;
+    
+    
+}
 
+.plan-card-main2{
+   padding: 0;
+   background: transparent;
+
+}
 
 .plan-icon img {
     width: 50px;
@@ -1210,6 +1233,33 @@ h1{
     font-size: 30px;
     font-weight: 700;
     color: var(--main-color);
+}
+.plan-cards2 .plan-card .plan-value {
+    font-size: 40px;
+    line-height: 42px;
+    text-align: left;
+    white-space: nowrap;
+}
+.plan-cards2 .plan-card .plan-value.plan-value2 {
+    font-size: 60px;
+    line-height: 62px;
+
+}
+.plan-cards2  .plan-desc{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 28px;
+}
+.plan-card-bottom{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.plan-card-bottom .plan-desc{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 .plan-card .plus {
@@ -1376,12 +1426,12 @@ h1{
     display: flex;
     align-items: center;
     gap: 15px;
-    justify-content: center;
-    padding: 20px 10px 10px 10px;
+    /* justify-content: center; */
+    padding: 10px 0;
     flex-wrap: wrap;
     width: 100%;
 }
-.first-footer .footer-social img {
+ .footer-social img {
     width: 30px;
     height: 30px;
     object-fit: contain;
@@ -1390,7 +1440,7 @@ h1{
 
 }
 
-.first-footer .footer-social img:hover {
+.footer-social img:hover {
 
     -webkit-animation-name: jello;
     animation: jello 2s linear;
@@ -1484,7 +1534,7 @@ h1{
 }
 
 .logo-footer img {
-    max-width: 150px;
+    max-width: 120px;
     height: 90px;
     object-fit: contain;
 }
@@ -1734,7 +1784,7 @@ label {
 
 .center-card {
     background-color: var(--main-color) !important;
-    padding: 40px !important;
+    padding: 20px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1777,7 +1827,9 @@ label {
     margin: 5px 0;
 }
 
-
+.footer-danube{
+    width: 200px;
+}
 
 
 @media(min-width: 520px) {
@@ -1810,6 +1862,9 @@ label {
         height: 2px;
         background: linear-gradient(270deg, var(--main-color), transparent);
     }
+    .plan-cards.plan-cards2:before{
+        display: none;
+    }
 }
 
 @media(max-width: 1600px) {
@@ -1837,6 +1892,9 @@ label {
 
 
 
+.footer-danube{
+    width: 140px;
+}
 
     .about-right {
         padding: 100px 50px;
@@ -1919,8 +1977,8 @@ label {
 
     .plan-card {
         min-width: 140px;
-        padding: 16px 8px;
         border-radius: 12px;
+        align-items: flex-start;
     }
 
 
@@ -2014,6 +2072,7 @@ label {
 
     .footer-column:first-child {
         border-right: 1px solid #FFFFFF24 !important;
+        flex-wrap: wrap;
     }
 
 
@@ -2235,11 +2294,15 @@ label {
         padding: 0;
     }
         .third-footer{
-        text-align: center;
-        justify-content: center;
+        text-align:left;
+        /* justify-content: center; */
         padding-left: 20px;
         padding-right: 20px;
     }
+    .plan-cards2 .plan-card .plan-value {
+    font-size: 26px;
+    line-height: 30px;
+}
 
 
 }
@@ -2274,6 +2337,7 @@ label {
         transform: translateX(-50%);
 
     }
+
 }
 
 @media(max-width: 520px) {
@@ -2483,12 +2547,10 @@ label {
     }
 
     .logo-footer-column {
-        flex-direction: column;
+       width: 100%;
+       justify-content: center;
     }
 
-    .logo-footer {
-        border: none;
-    }
 
     .newst-second-row {
         display: grid;
@@ -2562,13 +2624,11 @@ label {
 
         flex: 1 1 100%;
         max-width: 100%;
-        padding: 20px;
+     
     }
 
     .plan-card {
         display: flex;
-        align-items: center;
-        text-align: left;
         gap: 22px;
     }
 
